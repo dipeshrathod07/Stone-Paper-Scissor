@@ -83,6 +83,7 @@ const reset = () =>{
     userScorPara.innerText = 0;
     compScorPara.innerText = 0;
     msg.innerText ="Play your move";
+    msg.style.backgroundColor = "#081B31";
 }
 
 
