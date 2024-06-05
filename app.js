@@ -13,11 +13,6 @@ const genComputerChoice =() =>{
      return options[randIdx];
 }
 
-const reset = () =>{
-    userScorPara.innerText = 0;
-    compScorPara.innerText = 0;
-    msg.innerText ="Play your move";
-}
 
 const drawGame = () =>{
     console.log("game was draw.");
@@ -81,6 +76,14 @@ choices.forEach((choice) =>{
 
     });
 });
+
+const reset = () =>{
+    userScore = 0;
+    compScore = 0;
+    userScorPara.innerText = 0;
+    compScorPara.innerText = 0;
+    msg.innerText ="Play your move";
+}
 
 
 document.querySelector("#btn").addEventListener("click",reset);
